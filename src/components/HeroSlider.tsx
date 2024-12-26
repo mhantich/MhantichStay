@@ -84,7 +84,7 @@ const HeroSlider = () => {
                 {slide.description}
               </p>
               <button 
-                className={`px-8 py-3 bg-white text-black rounded-md font-semibold hover:bg-gray-100 
+                className={`px-8 py-3 bg-amber-700/50 text-white rounded-md font-semibold hover:bg-gray-100 
                   transform transition-all duration-1000 ease-out
                   ${currentSlide === index 
                     ? 'translate-y-0 opacity-100 delay-900' 
@@ -101,16 +101,16 @@ const HeroSlider = () => {
       {/* Navigation Arrows */}
       <button 
         onClick={prevSlide}
-        className="absolute left-4 top-1/2 -translate-y-1/2 z-20 p-2 rounded-full bg-white/20 
-          backdrop-blur-sm hover:bg-white/30 transition-all duration-300 text-white"
+        className="absolute left-4 top-1/2 -translate-y-1/2 z-20 p-2 rounded-full bg-amber-500/30 
+          backdrop-blur-sm hover:bg-amber-500/50 transition-all duration-300 text-white"
         disabled={isAnimating}
       >
         <ChevronLeft className="h-6 w-6" />
       </button>
       <button 
         onClick={nextSlide}
-        className="absolute right-4 top-1/2 -translate-y-1/2 z-20 p-2 rounded-full bg-white/20 
-          backdrop-blur-sm hover:bg-white/30 transition-all duration-300 text-white"
+        className="absolute right-4 top-1/2 -translate-y-1/2 z-20 p-2 rounded-full bg-amber-500/30
+          backdrop-blur-sm hover:bg-amber-500/75 transition-all duration-300 text-white"
         disabled={isAnimating}
       >
         <ChevronRight className="h-6 w-6" />
@@ -124,8 +124,8 @@ const HeroSlider = () => {
             onClick={() => goToSlide(index)}
             className={`w-2 h-2 rounded-full transition-all duration-500 ${
               currentSlide === index 
-                ? 'bg-white w-8' 
-                : 'bg-white/50 hover:bg-white/75'
+                ? 'bg-amber-400 w-8' 
+                : 'bg-amber-500/50 hover:bg-white/75'
             }`}
             disabled={isAnimating}
           />

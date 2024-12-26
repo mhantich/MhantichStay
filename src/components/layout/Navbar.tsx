@@ -10,7 +10,7 @@ import { Button } from '@/components/ui/button';
 const Navbar = () => {
   const user = true
   return (
-    <header className="fixed top-0 w-full z-50 transition-all duration-300 group hover:bg-white py-5">
+    <header className="fixed top-0 w-full bg-white/25 z-50 transition-all duration-300 group hover:bg-white py-5">
       <div className="container mx-auto flex h-16 items-center justify-between px-4">
         {/* Logo */}
         <Link to="/" className="flex items-center space-x-2">

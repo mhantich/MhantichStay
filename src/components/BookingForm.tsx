@@ -88,7 +88,7 @@ export function BookingForm() {
       </div>
 
       <div className="mt-6">
-        <Button className="w-full bg-primary hover:bg-primary/90 text-white py-6 text-lg">
+        <Button className="w-full bg-amber-700 hover:bg-amber-700/75  text-white py-6 text-lg">
           Search Availability
         </Button>
       </div>
