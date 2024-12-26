@@ -6,9 +6,10 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
+import { DateRange } from 'react-day-picker';
 
 export function BookingPage() {
-  const [selectedDates, setSelectedDates] = useState<Date[]>([]);
+  const [selectedDates, setSelectedDates] = useState<DateRange | undefined>(undefined);
   const [guests, setGuests] = useState(1);
   const rooms = useStore((state) => state.rooms);
 
@@ -24,7 +25,7 @@ export function BookingPage() {
             <Calendar
               mode="range"
               selected={selectedDates}
-              onSelect={(dates) => setSelectedDates(dates || [])}
+              onSelect={setSelectedDates}
               className="rounded-md border"
             />
           </CardContent>

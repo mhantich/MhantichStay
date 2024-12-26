@@ -2,43 +2,38 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
-import { UserIcon } from 'lucide-react';
 
-const RoomListings = () => {
+const SpecialOffers = () => {
   const rooms = [
     {
       title: 'King Ensuite Room',
-      capacity: '2 Adults',
+ 
       image: 'https://quitenicestuff.com/demos/sohohotel/site2/wp-content/uploads/2024/06/34.jpg',
-      size: '20m',
-      city: 'Agadir',
+   
     },
     {
       title: 'Queen Room',
-      capacity: '2 Adults',
+   
       image: 'https://quitenicestuff.com/demos/sohohotel/site2/wp-content/uploads/2024/06/18-1470x920.jpg',
-      size: '20m',
-      city: 'Agadir',
+  
     },
     {
       title: 'Deluxe Suite',
-      capacity: '3 Adults',
+
       image: 'https://quitenicestuff.com/demos/sohohotel/site2/wp-content/uploads/2024/06/17-1470x920.jpg',
-      size: '30m',
-      city: 'Marrakech',
+
     },
     {
       title: 'Standard Room',
-      capacity: '2 Adults',
+ 
       image: 'https://quitenicestuff.com/demos/sohohotel/site2/wp-content/uploads/2024/06/16-1470x920.jpg',
-      size: '18m',
-      city: 'Casablanca',
+
     },
   ];
 
   return (
     <div className="max-w-7xl mx-auto px-4 py-12">
-      <h1 className="text-3xl text-center font-medium mb-4">Our Rooms</h1>
+      <h1 className="text-3xl text-center font-medium mb-4">Special Offers</h1>
       <p className="text-gray-600 text-center mb-8 max-w-2xl mx-auto">
         Maecenas feugiat mattis ipsum, vitae semper massa porttitor sit amet. Nulla mattis, urna et posuere ornare, neque leo dapibus ante, nec dignissim.
       </p>
@@ -64,22 +59,14 @@ const RoomListings = () => {
                   className="w-full h-64 object-cover"
                 />
                 <div className="p-6 flex flex-col gap-4">
-                  <h2 className="text-xl font-medium">{room.title}</h2>
-                  <div className="flex items-center text-gray-600">
-                    <UserIcon className="h-5 w-5 text-amber-700 mr-2" />
-                    <span className="font-bold">Capacity: {room.capacity}</span>
-                  </div>
-                  <div className="flex items-center text-gray-600">
-                    <UserIcon className="h-5 w-5 text-amber-700 mr-2" />
-                    <span className="font-bold">Size: {room.size}</span>
-                  </div>
-                  <div className="flex items-center text-gray-600">
-                    <UserIcon className="h-5 w-5 text-amber-700 mr-2" />
-                    <span className="font-bold">City: {room.city}</span>
-                  </div>
-                  <button className="px-10 py-3 mt-4 bg-amber-700 hover:bg-amber-600 text-white rounded-md transition-colors duration-300">
-                    Book Now
-                  </button>
+                    <div className=' border-b-[1px] py-2'>
+
+                  <h2 className="text-xl font-thin  ">{room.title}</h2>
+                    </div>
+                  <h2 className="text-xl font-thin text-gray-400">10% off for families in March</h2>
+           
+  
+              
                 </div>
               </div>
             </SwiperSlide>
@@ -90,4 +77,4 @@ const RoomListings = () => {
   );
 };
 
-export default RoomListings;
+export default SpecialOffers;

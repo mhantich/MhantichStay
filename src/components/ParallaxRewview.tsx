@@ -1,6 +1,6 @@
 import { useState, useRef, useEffect } from "react";
 
-const ParallaxSection = () => {
+const ParallaxRewview = () => {
   const firstParallaxRef = useRef(null);
   const [firstParallaxOffset, setFirstParallaxOffset] = useState(0);
   // const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
@@ -69,17 +69,13 @@ const ParallaxSection = () => {
 
           <div className="lg:w-1/2 space-y-2 flex flex-col justify-center py-4 md:py-14">
             <div className="space-y-3 px-6 font-serif">
-          
-              <h1 className="text-3xl sm:text-5xl md:text-5xl lg:text-6xl font-light">
-                About us
-              </h1>
+          <p className="text-9xl">“</p>
+     
               <p className="text-gray-600 leading-relaxed text-xl">
               Maecenas feugiat mattis ipsum, vitae semper massa porttitor sit amet. Nulla mattis, urna et posuere ornare, neque leo dapibus ante, nec dignissim massa felis ad nulla donec porttitor nulla et tristique dignissim.
               </p>
            
-              <button className="px-10 py-5 bg-amber-700 hover:bg-amber-700/75 text-white  underline">
-                Discover More
-              </button>
+      <p className="text-sm text-gray-400 ">- mhantich</p>
             </div>
           </div>
         </div>
@@ -90,4 +86,4 @@ const ParallaxSection = () => {
   );
 };
 
-export default ParallaxSection;
+export default ParallaxRewview;
