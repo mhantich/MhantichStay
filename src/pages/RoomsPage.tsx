@@ -2,6 +2,7 @@ import { useStore } from '@/store/useStore';
 import { Card, CardContent, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { AspectRatio } from '@/components/ui/aspect-ratio';
+import { Star } from 'lucide-react';
 
 export function RoomsPage() {
   const rooms = useStore((state) => state.rooms);

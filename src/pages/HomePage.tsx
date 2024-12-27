@@ -5,7 +5,7 @@ import ParallaxRewview from "@/components/ParallaxRewview";
 import ParallaxSection from "@/components/ParallaxSection";
 import RoomListings from "@/components/RoomListings";
 import SpecialOffers from "@/components/SpecialOffers";
-import StaywithUs from "@/components/staywithUs";
+import StaywithUs from "@/components/StaywithUs";
 import WelcomeSection from "@/components/WelcomeSection";
 
 
