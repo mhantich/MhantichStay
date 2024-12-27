@@ -4,7 +4,7 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import { UserIcon } from 'lucide-react';
 
-const RoomListings = () => {
+const RoomListings = ({ title, isActive }: { title: string; isActive: boolean }) => {
   const rooms = [
     {
       title: 'King Ensuite Room',
@@ -38,10 +38,12 @@ const RoomListings = () => {
 
   return (
     <div className="max-w-7xl mx-auto px-4 py-12">
-      <h1 className="text-3xl text-center font-medium mb-4">Our Rooms</h1>
-      <p className="text-gray-600 text-center mb-8 max-w-2xl mx-auto">
-        Maecenas feugiat mattis ipsum, vitae semper massa porttitor sit amet. Nulla mattis, urna et posuere ornare, neque leo dapibus ante, nec dignissim.
-      </p>
+      <h1 className="text-3xl text-center font-medium mb-4">{title}</h1>
+      {isActive && (
+        <p className="text-gray-600 text-center mb-8 max-w-2xl mx-auto">
+          Maecenas feugiat mattis ipsum, vitae semper massa porttitor sit amet. Nulla mattis, urna et posuere ornare, neque leo dapibus ante, nec dignissim.
+        </p>
+      )}
 
       <div className="px-8"> {/* Added padding for better slide visibility */}
         <Swiper

@@ -16,7 +16,7 @@ export function HomePage() {
       <BookingForm/>
       <WelcomeSection />
       <ParallaxSection />
-      <RoomListings />
+      <RoomListings title="Our Rooms" isActive={true} />
       <ParallaxRewview/>
       <SpecialOffers/>
       <StaywithUs/>
