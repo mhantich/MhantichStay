@@ -37,7 +37,7 @@ const RoomListings = ({ title, isActive }: { title: string; isActive: boolean })
   ];
 
   return (
-    <div className="max-w-7xl mx-auto px-4 py-12">
+    <div className="max-w-7xl mx-auto px-1 py-12">
       <h1 className="text-3xl text-center font-medium mb-4">{title}</h1>
       {isActive && (
         <p className="text-gray-600 text-center mb-8 max-w-2xl mx-auto">
@@ -45,7 +45,7 @@ const RoomListings = ({ title, isActive }: { title: string; isActive: boolean })
         </p>
       )}
 
-      <div className="px-8"> {/* Added padding for better slide visibility */}
+      <div className="px-3"> {/* Added padding for better slide visibility */}
         <Swiper
           spaceBetween={30} // Increased space between slides
           slidesPerView={1}
@@ -79,7 +79,7 @@ const RoomListings = ({ title, isActive }: { title: string; isActive: boolean })
                     <UserIcon className="h-5 w-5 text-amber-700 mr-2" />
                     <span className="font-bold">City: {room.city}</span>
                   </div>
-                  <button className="px-10 py-3 mt-4 bg-amber-700 hover:bg-amber-600 text-white rounded-md transition-colors duration-300">
+                  <button className="px-5 py-3 mt-4 bg-amber-700 hover:bg-amber-600 text-white rounded-md transition-colors duration-300">
                     Book Now
                   </button>
                 </div>
