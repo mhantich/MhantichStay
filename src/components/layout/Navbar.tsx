@@ -132,7 +132,7 @@ const Navbar = () => {
                   <Button variant="ghost" className="w-full justify-start">
                     Sign In
                   </Button>
-                  <Button className="w-full">
+                  <Button className="w-full justify-start">
                     Sign Up
                   </Button>
                 </>
