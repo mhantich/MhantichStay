@@ -58,7 +58,7 @@ export function Footer() {
         </div>
 
         <div className="mt-8 border-t border-gray-800 pt-8 text-center">
-          <p>&copy; {new Date().getFullYear()} LuxStay. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} <a className='text-white' href="https://mhantich.vercel.app/">Mhantich</a>. All rights reserved.</p>
         </div>
       </div>
     </footer>

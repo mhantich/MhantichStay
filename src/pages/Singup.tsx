@@ -4,7 +4,7 @@ import Paralllax from '@/components/Paralllax';
 function Singup() {
   return (
     <>
-    <Paralllax title="Login"  />
+    <Paralllax title="Sing Up"  />
 <div className="max-w-3xl mx-auto p-8">
       <div className="mb-12">
         <h1 className="text-2xl font-normal mb-8">Sing up</h1>
@@ -74,7 +74,7 @@ function Singup() {
         
         <div>
           <h2 className="text-lg mb-4">Contact</h2>
-          <p className="text-gray-600">55 Columbus Circle, New York, NY</p>
+          <p className="text-gray-600">Agadir, Morocco</p>
         </div>
         
         <div>
