@@ -1,4 +1,4 @@
-import { Hotel, Menu, X } from 'lucide-react';
+import { Hotel, Menu} from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 import {
@@ -12,7 +12,6 @@ import { Sheet, SheetContent, SheetHeader, SheetTitle, SheetTrigger } from '@/co
 const Navbar = () => {
   const user = false;
   const [isScrolled, setIsScrolled] = useState(false);
-  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
