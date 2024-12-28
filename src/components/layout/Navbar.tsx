@@ -82,18 +82,19 @@ const Navbar = () => {
           ) : (
             <>
               <Button
-                variant="ghost"
-                className={`transition-colors duration-300
-                  ${isScrolled ? 'text-white' : 'text-black'}
-                  hover:bg-transparent group-hover:text-black`}
+              
+                className={`transition-colors duration-300 text-white`}
+
               >
-                Sign In
+           
+                <Link  className="text-white"     to="/login">Sign In</Link>
+             
+
               </Button>
               <Button
-                className="bg-white text-black hover:bg-black hover:text-white
-                  transition-colors duration-300 group-hover:bg-black group-hover:text-white"
-              >
-                Sign Up
+                    className={`transition-colors duration-300 text-white`}
+                  >
+                  <Link className="text-white" to="/Singup">Singup</Link>
               </Button>
             </>
           )}
@@ -116,24 +117,22 @@ const Navbar = () => {
             <SheetHeader>
               <SheetTitle className="text-left">Menu</SheetTitle>
             </SheetHeader>
-            <div className="flex flex-col space-y-4 mt-8">
+            <div className="flex  flex-col items-start space-y-4 mt-8">
               {navItems.map((item) => (
                 <Link
                   key={item}
                   to={item === 'Home' ? '/' : `/${item.toLowerCase()}`}
-                  className="text-lg font-medium hover:text-gray-600 transition-colors"
+                  className=" transition-colors"
                 >
                   {item}
                 </Link>
               ))}
               {!user && (
                 <>
-                  <Button variant="ghost" className="w-full justify-start">
-                    Sign In
-                  </Button>
-                  <Button className="w-full justify-start">
-                    Sign Up
-                  </Button>
+                  <Link to="/login">login</Link>
+                  
+                  <Link to="/Singup">Singup</Link>
+                 
                 </>
               )}
               {user && (
